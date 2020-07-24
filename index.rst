@@ -13,4 +13,5 @@ Welcome to CLEWS GIS's documentation!
    user/overview
    user/input
    user/processing
+   user/output
 
