@@ -17,9 +17,9 @@ The global raster inputs so far have been acquired from sources like NASA and ot
 
 In addition, some inputs in consideration are: 
 
-* CarbonFlux (Net Ecosystem Excchange) (link)
-* Solar Horizontal Irradiation (Link)
-* Wind Power Density Potential (link)
+* `CarbonFlux_ (Net Ecosystem Excchange)
+* `Solar Horizontal Irradiation`_ 
+* `Wind Power Density Potential`_ 
 
 The raw input data from your sources may consist of a variety of raster formats (netCDF, HDF, TIFF etc). However this CLEWs process is designed for simpler raster formats, therefore all inputs were converted to TIFF. QGIS offers simple processes for such conversions.
 
@@ -36,5 +36,8 @@ The Global Administrative Unit Layers GAUL_ is implemented by FAO.
 .. _Landcover: https://lpdaac.usgs.gov/products/mcd12q1v006/
 .. _Rainflux: https://ldas.gsfc.nasa.gov/FLDAS/
 .. _Water Table Depth: https://gmd.copernicus.org/articles/12/2401/2019/#section6
+.. _CarbonFlux: https://nsidc.org/data/SPL4CMDL/versions/4
+.. _Solar Horizontal Irradiation: https://globalsolaratlas.info/download
+.. _Wind Power Density Potential: https://globalwindatlas.info/downloads/gis-files
 .. _GAUL: http://www.fao.org/geonetwork/srv/en/metadata.show?id=12691
 
