@@ -17,6 +17,7 @@ Below is a raw raster input of rainflux data in a global extent.
 
 .. figure:: raster.png
 	:align: center
+	..
 
 |
 
@@ -24,6 +25,7 @@ The processed output of points grid in a zoomed in section would be as follows.
 
 .. figure:: points.png
 	:align: center
+	..
 
 |
 
