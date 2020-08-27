@@ -10,6 +10,8 @@ Each raster input will have their own spatial resolution. The largest tolerable 
 
 To resample a raster is to change the cell size, while retaining the extent of the dataset. The new values of the cells depends on the technique chosen. For this project, the technique of will be nearest neighbor.
 
+.. code-block:: python
+
 	import rasterio
 	from rasterio.enums import Resampling
 
@@ -38,11 +40,15 @@ After resampling your raster input, convert it to *ascii* format (asc.). Current
 
 Next is conversion of the ascii file to csv, where the originals pixels of the raster are arranged in csv cells:
 
+.. code-block:: python
+
 	read_file = pd.read_csv (r'example.asc', skiprows=6)
 	read_file.to_csv (r'example.csv', index=None)
 
 
 Then convert csv to Lat/Long Geodataframe:
+
+.. code-block:: python
 
 	df_test = pd.read_csv('example.asc', skiprows = 6)
 
@@ -64,6 +70,8 @@ Then convert csv to Lat/Long Geodataframe:
 
 
 Create geometry:
+
+.. code-block:: python
 	
 	df_test['cols'] = df_test['cols']#.astype(int)
 
@@ -105,6 +113,7 @@ The Global Administrative Unit Layer (GAUL) for admin 0 (country-level) is a sin
 
 We will need separate shapefiles for each country:
 
+.. code-block:: python
 
 	# Selecting country and exporting into separate shapefile
 
@@ -123,6 +132,8 @@ Final Step
 ---------------
 
 Last process includes integrating the raster and shapefile components, by clipping the points shapefile product to the country shapefiles.
+
+.. code-block:: python
 
 	points = #output of previous block
 	country = ('country.shp')
