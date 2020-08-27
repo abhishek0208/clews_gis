@@ -17,7 +17,7 @@ The global raster inputs so far have been acquired from sources like NASA and ot
 
 In addition, some inputs in consideration are: 
 
-* `CarbonFlux_ (Net Ecosystem Excchange)
+* CarbonFlux_ (Net Ecosystem Excchange)
 * `Solar Horizontal Irradiation`_ 
 * `Wind Power Density Potential`_ 
 
