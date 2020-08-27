@@ -15,12 +15,12 @@ This tool is a Geographic Information Systems model that takes in raster inputs 
 
 Below is a raw raster input of rainflux data in a global extent.
 
-.. figure:: /img/sample_raster.png
+.. figure:: /img/raster.png
 
 
 The processed output of points grid in a zoomed in section would be as follows.
 
-.. figure:: /img/Points_grid.png
+.. figure:: /img/points.png
 
 
 The full extent of the input_ and processes_ are visualized in the flowchart below.
