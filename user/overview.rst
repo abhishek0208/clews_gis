@@ -15,7 +15,8 @@ This tool is a Geographic Information Systems model that takes in raster inputs 
 
 Below is a raw raster input of rainflux data in a global extent.
 
-.. image:: C:\Users\13157\repositories\clews_gis\img\sample_raster.png
+.. image:: /img/sample_raster.png
+	:align: center
 
 
 The processed output of points grid in a zoomed in section would be as follows.
