@@ -10,9 +10,12 @@ Input data consist of whichever variables are needed for the CLEWs model in **RA
 
 The global raster inputs so far have been acquired from sources like NASA and other research institutes, consisting of satellite acquired data as well as research based models. Current inventory of global raster inputs are as follows:
 
-* [Land Cover](https://lpdaac.usgs.gov/products/mcd12q1v006/)
-* [Rainflux](https://ldas.gsfc.nasa.gov/FLDAS/)
-* [Water Table Depth](https://gmd.copernicus.org/articles/12/2401/2019/#section6)
+* `Landcover`_
+.. _Landcover: https://lpdaac.usgs.gov/products/mcd12q1v006/
+* `Rainflux`_
+.. _Rainflux: https://ldas.gsfc.nasa.gov/FLDAS/
+* `Water Table Depth`_
+.. _Water Table Depth: https://gmd.copernicus.org/articles/12/2401/2019/#section6
 
 In addition, some inputs in consideration are: 
 
@@ -29,5 +32,6 @@ Vector Shapefile Component
 
 This project uses administrative boundaries shapefiles that are used to clip the raster components to specific countries.
 
-The Global Administrative Unit Layers (GAUL)](http://www.fao.org/geonetwork/srv/en/metadata.show) is implemented by FAO.
+The Global Administrative Unit Layers `GAUL`_ is implemented by FAO.
+.. _GAUL: http://www.fao.org/geonetwork/srv/en/metadata.show
 
