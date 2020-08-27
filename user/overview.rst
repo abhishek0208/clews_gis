@@ -23,6 +23,10 @@ The processed output of points grid in a zoomed in section would be as follows.
 .. image:: C:\Users\13157\repositories\clews_gis\img\Points_grid
 
 
-The full extent of the [input](link) and [processes](link) are visualized in the flowchart below.
+The full extent of the input_ and processes_ are visualized in the flowchart below.
 
 .. image:: C:\Users\13157\repositories\clews_gis\img\GIS_flowchart3
+
+
+.. _input: https://clews-gis.readthedocs.io/en/latest/user/input.html
+.. _processes: https://clews-gis.readthedocs.io/en/latest/user/processing.html
