@@ -15,7 +15,7 @@ This tool is a Geographic Information Systems model that takes in raster inputs 
 
 Below is a raw raster input of rainflux data in a global extent.
 
-.. figure:: raster.PNG
+.. figure:: raster.png
 	:align: center
 	..
 
