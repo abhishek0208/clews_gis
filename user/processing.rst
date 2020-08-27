@@ -6,7 +6,7 @@ Data Processing Steps
 Raster Component
 ---------------------
 
-Each raster input will have their own spatial resolution. The largest tolerable resolution is 9km in horizontal distance (AEZ resolution).  Therefore, if your input is larger in resolution, the first step of the process will be to resample your input.
+The raw raster input from any source will have their own spatial resolution. This tool requires a uniform spatial resolution of 5 arcmins, or 0.08333 degrees, for the rasters. Therefore, given that your input is a different resolution than 5 arcmins, the first step of the process is to resample the input.
 
 To resample a raster is to change the cell size, while retaining the extent of the dataset. The new values of the cells depends on the technique chosen. For this project, the technique of will be nearest neighbor.
 
@@ -38,7 +38,7 @@ To resample a raster is to change the cell size, while retaining the extent of t
 After resampling your raster input, convert it to *ascii* format (asc.). Currently this is done using QGIS using the *convert raster* tool.
 
 
-Next is conversion of the ascii file to csv, where the originals pixels of the raster are arranged in csv cells:
+Then the asc files are converted to csv, where the originals pixels of the raster are arranged in csv cells:
 
 .. code-block:: python
 
@@ -106,12 +106,15 @@ Create geometry:
 	gdf_test.plot(column = 'value')
 
 
+Lastly, using the lat/long columns of the csv, create a points shapefile.
+
+
 Vector Shapefile Component
 ---------------------
 
-The Global Administrative Unit Layer (GAUL) for admin 0 (country-level) is a single shapefile with each country being a feature.
+The Global Administrative Unit Layer (GAUL) for admin 0 (country-level) is a single shapefile with each country being a feature in the file.
 
-We will need separate shapefiles for each country:
+We will need separate shapefiles for individual countries:
 
 .. code-block:: python
 
@@ -131,7 +134,7 @@ We will need separate shapefiles for each country:
 Final Step
 ---------------
 
-Last process includes integrating the raster and shapefile components, by clipping the points shapefile product to the country shapefiles.
+The last step includes integrating the raster and shapefile products, by clipping the points shapefile to the country shapefiles.
 
 .. code-block:: python
 
