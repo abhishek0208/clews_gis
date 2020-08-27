@@ -17,6 +17,8 @@ Below is a raw raster input of rainflux data in a global extent.
 
 image:: C:\Users\13157\repositories\clews_gis\img\sample_raster
 
+![alt text](C:\Users\13157\repositories\clews_gis\img\sample_raster)
+
 
 The processed output of points grid in a zoomed in section would be as follows.
 
