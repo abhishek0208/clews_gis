@@ -8,7 +8,6 @@ Raster Component
 
 Each raster input will have their own spatial resolution. The largest tolerable resolution is 9km in horizontal distance (AEZ resolution).  Therefore, if your input is larger in resolution, the first step of the process will be to resample your input.
 
-
 To resample a raster is to change the cell size, while retaining the extent of the dataset. The new values of the cells depends on the technique chosen. For this project, the technique of will be nearest neighbor.
 
 	import rasterio
